@@ -88,10 +88,10 @@
     .agenda tbody tr.track-row td { background: var(--purple); color: white; font-size: 10.5px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; padding: 9px 16px; }
 
     .speakers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    .speaker-card { border: 1px dashed var(--rule); padding: 24px 18px; text-align: center; background: white; }
-    .speaker-avatar { width: 60px; height: 60px; border-radius: 50%; background: var(--pale); display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; }
+    .speaker-card { border: 1px dashed var(--rule); padding: 30px 20px 26px; text-align: center; background: white; }
+    .speaker-avatar { width: 116px; height: 116px; border-radius: 50%; background: var(--pale); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
     .speaker-avatar svg { opacity: 0.35; }
-    .speaker-photo { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; object-position: center top; margin: 0 auto 12px; display: block; border: 2px solid var(--rule); }
+    .speaker-photo { width: 116px; height: 116px; border-radius: 50%; object-fit: cover; object-position: center top; margin: 0 auto 16px; display: block; border: 3px solid var(--rule); }
     .speaker-role { font-size: 10px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; color: var(--purple); margin-bottom: 4px; }
     .speaker-name { font-family: 'Cormorant Garamond', serif; font-size: 15px; color: var(--soft); font-style: italic; }
     .speaker-card.confirmed { border-style: solid; border-color: var(--rule); }
@@ -118,9 +118,9 @@
     .partners { background: var(--deep); padding: 72px 40px; }
     .partners .section-label { color: rgba(200,166,232,0.75); }
     .partners .section-title { color: white; }
-    .partners-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 1px; margin-top: 36px; background: rgba(255,255,255,0.06); }
+    .partners-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin-top: 36px; background: rgba(255,255,255,0.06); }
     .partner { background: var(--deep); padding: 26px 22px; }
-    .partner.lead { background: rgba(255,255,255,0.05); }
+    .partner.lead { background: rgba(255,255,255,0.05); grid-column: span 2; }
     .partner-role { font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(200,166,232,0.7); margin-bottom: 10px; }
     .partner-logo { margin-bottom: 10px; }
     .partner-logo img { max-height: 36px; max-width: 150px; object-fit: contain; opacity: 0.80; filter: brightness(0) invert(1); }
@@ -173,6 +173,7 @@
     @media (max-width: 580px) {
       .hero, .section, .partners, footer { padding-left: 20px; padding-right: 20px; }
       .partners-grid { grid-template-columns: 1fr; }
+      .partner.lead { grid-column: auto; }
       .speakers-grid { grid-template-columns: 1fr 1fr; }
       .org-lead-grid { grid-template-columns: 1fr; }
       .theme-body { padding-left: 0; }
@@ -209,11 +210,11 @@
     <div class="hero-meta">
       <div class="meta-item">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        <!-- TODO: date -->18 November
+        Wednesday, 18 November 2026
       </div>
       <div class="meta-item">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <!-- TODO: venue -->The University of Queensland, Brisbane
+        50-C207, Hawken Engineering Building, The University of Queensland
       </div>
       <div class="meta-item">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -241,12 +242,16 @@
         <p>Digital evidence now sits at the centre of how we investigate crime, respond to cyber incidents, and settle disputes over what was actually said, shown, or shared. Messaging apps, social platforms, and synthetic media have multiplied the volume of that evidence while making its origin and integrity harder to establish. Forensic readiness, the capacity to collect, preserve, and rely on digital evidence before an incident rather than scrambling after one, has become a precondition for trust in social communications.</p>
         <p>This one-day workshop, hosted by the UQ Cyber Research Centre at The University of Queensland, brings investigators, practitioners, clinicians, and researchers together to work through where forensic practice needs to go next. The forenoon track examines the problems law enforcement faces with volatile, encrypted, and manipulated evidence. The afternoon track turns to healthcare, where forensic readiness is part of keeping clinical systems running and patient data protected through and after a cyber incident.</p>
         <p>Each track pairs keynote addresses from industry and academic leaders with live demonstrations of student research projects from our centre, so that open problems are discussed alongside working tools and prototypes.</p>
+        <p>The day also serves as a showcase for our AEA Ignite research on the Authentication and Provenance of Manipulated Media (APMM). That work builds tools to establish whether images, video, and documents circulating on social platforms have been altered and where they came from, the same question of evidential trust that runs through both tracks.</p>
       </div>
       <div class="about-facts">
+        <div><div class="fact-label">Date</div><div class="fact-value">Wednesday, 18 November 2026</div></div>
+        <div><div class="fact-label">Venue</div><div class="fact-value">50-C207, Hawken Engineering Building, The University of Queensland</div></div>
         <div><div class="fact-label">Event Type</div><div class="fact-value">One-Day Workshop</div></div>
         <div><div class="fact-label">Host</div><div class="fact-value">UQ Cyber, The University of Queensland</div></div>
+        <div><div class="fact-label">Research Showcase</div><div class="fact-value">AEA Ignite: Authentication and Provenance of Manipulated Media (APMM)</div></div>
         <div><div class="fact-label">Format</div><div class="fact-value">Two tracks, keynote addresses, student project demonstrations</div></div>
-        <div><div class="fact-label">Forenoon</div><div class="fact-value">Forensic Challenges for Law Enforcement</div></div>
+        <div><div class="fact-label">Forenoon</div><div class="fact-value">Forensics Challenges for Law Enforcement</div></div>
         <div><div class="fact-label">Afternoon</div><div class="fact-value">Forensics to Build Cyber Resilience for Health Care</div></div>
         <div><div class="fact-label">Enquiries</div><div class="fact-value"><a href="mailto:priyanka.singh@uq.edu.au">priyanka.singh@uq.edu.au</a></div></div>
       </div>
@@ -265,7 +270,7 @@
     <div class="workshops-grid">
       <div class="workshop">
         <div class="workshop-num">Track 1 of 2</div>
-        <div class="workshop-title">Forensic Challenges for Law Enforcement</div>
+        <div class="workshop-title">Forensics Challenges for Law Enforcement</div>
         <div class="tags"><span class="tag">Forenoon</span><span class="tag">Keynotes</span><span class="tag">Student Demos</span></div>
         <p class="workshop-body">Investigators now handle evidence that is volatile, spread across cloud services and endpoints, frequently encrypted, and increasingly fabricated. This track examines live response and endpoint visibility at scale, acquisition of evidence from devices and social platforms, authentication of images, audio, and video presented as evidence, and the standards that keep digital findings admissible.</p>
         <p class="workshop-people"><strong>Keynotes:</strong> Mike Cohen, Prof. Parag Rughani<br><strong>Demos:</strong> Jack, Noah, Minkyung, Aditya, Anurag</p>
@@ -294,7 +299,7 @@
       </div>
       <div class="theme">
         <div class="theme-header"><span class="theme-num">Focus 2</span><span class="theme-title">Trust in Social Communications</span></div>
-        <p class="theme-body">Establishing the provenance and authenticity of messages, images, voice, and video shared across social platforms, including detection of manipulated and synthetic media and the evidential weight such content can carry.</p>
+        <p class="theme-body">Establishing the provenance and authenticity of messages, images, voice, and video shared across social platforms, including detection of manipulated and synthetic media, provenance verification, and the evidential weight such content can carry. This is the core question behind our AEA Ignite APMM research.</p>
       </div>
       <div class="theme">
         <div class="theme-header"><span class="theme-num">Focus 3</span><span class="theme-title">Resilience and Response</span></div>
@@ -348,7 +353,7 @@
 
       <!-- Marc Sarossy: switch class to "speaker-card confirmed" and add the photo once confirmed -->
       <div class="speaker-card pending">
-        <div class="speaker-avatar"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#51247A" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div>
+        <div class="speaker-avatar"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#51247A" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div>
         <div class="speaker-role">Keynote &middot; Afternoon</div>
         <div class="speaker-name">Marc Sarossy</div>
         <div class="speaker-title">To be confirmed</div>
@@ -377,13 +382,13 @@
   <div class="inner">
     <p class="section-label">Programme</p>
     <h2 class="section-title">Workshop Agenda</h2>
-    <p class="section-lead">The University of Queensland, Brisbane &middot; 9:00 AM AEST onwards &middot; Timings are provisional and will be finalised closer to the date.</p>
+    <p class="section-lead">Wednesday, 18 November 2026 &middot; 50-C207, Hawken Engineering Building, The University of Queensland &middot; 9:00 AM AEST onwards &middot; Timings are provisional and will be finalised closer to the date.</p>
     <div class="agenda-wrap">
       <table class="agenda">
         <thead><tr><th>AEST / Brisbane</th><th>Session</th></tr></thead>
         <tbody>
           <tr><td class="time">9:00 AM &ndash; 9:15 AM</td><td class="session">Welcome and Opening</td></tr>
-          <tr class="track-row"><td colspan="2">Track 1 &middot; Forensic Challenges for Law Enforcement</td></tr>
+          <tr class="track-row"><td colspan="2">Track 1 &middot; Forensics Challenges for Law Enforcement</td></tr>
           <tr><td class="time">9:15 AM &ndash; 9:55 AM</td><td class="session">Keynote: Mike Cohen<span class="sub">Rapid7</span></td></tr>
           <tr><td class="time">10:00 AM &ndash; 10:40 AM</td><td class="session">Keynote: Prof. Parag Rughani<span class="sub">National Forensic Sciences University, India</span></td></tr>
           <tr><td class="time">10:40 AM &ndash; 11:00 AM</td><td>Morning Tea</td></tr>
@@ -409,7 +414,7 @@
   <div class="inner">
     <p class="section-label">Student Research</p>
     <h2 class="section-title">Project Demonstrations</h2>
-    <p class="section-lead">Students from the UQ Cyber Research Centre demonstrate working prototypes from their research at the close of each track.</p>
+    <p class="section-lead">Students from the UQ Cyber Research Centre demonstrate working prototypes from their research at the close of each track, including work developed under our AEA Ignite project on the Authentication and Provenance of Manipulated Media.</p>
 
     <p class="org-label">Following Track 1 &middot; Forenoon</p>
     <div class="demo-grid">
@@ -424,9 +429,9 @@
         <div class="org-title"><em>Project title to be announced</em></div>
       </div>
       <div class="org-card support">
-        <div class="org-photo-ph"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#51247A" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div>
-        <div class="org-name">Minkyung</div>
-        <div class="org-title"><em>Project title to be announced</em></div>
+        <img class="org-photo" src="images/Minkyung.jpg" alt="Minkyung Park">
+        <div class="org-name">Minkyung Park</div>
+        <div class="org-title"><em>Privacy-Preserving Digital Investigation of Cybercrimes</em></div>
       </div>
       <div class="org-card support">
         <div class="org-photo-ph"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#51247A" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div>
@@ -444,8 +449,8 @@
     <div class="demo-grid">
       <div class="org-card support">
         <img class="org-photo" src="images/Gagandeep-Singh%20(1).jpg" alt="Gagandeep Singh" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/impact-initiative/Team/main/Gagandeep-Singh.jpg'">
-        <div class="org-name">Gagandeep</div>
-        <div class="org-title"><em>Project title to be announced</em></div>
+        <div class="org-name">Gagandeep Singh</div>
+        <div class="org-title"><em>APMM: Authentication and Provenance of Manipulated Multi-Media</em></div>
       </div>
       <div class="org-card support">
         <div class="org-photo-ph"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#51247A" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div>
@@ -454,8 +459,8 @@
       </div>
       <div class="org-card support">
         <img class="org-photo" src="images/Samudi%20(1).jpg" alt="Samudi">
-        <div class="org-name">Samudi</div>
-        <div class="org-title"><em>Project title to be announced</em></div>
+        <div class="org-name">Samudi Amarasinghe</div>
+        <div class="org-title"><em>D-SECURE: Dual-Source Evidence Combination for Unified Reasoning in Misinformation Detection</em></div>
       </div>
       <div class="org-card support">
         <div class="org-photo-ph"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#51247A" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div>
@@ -507,6 +512,11 @@
         <div class="partner-logo" style="margin-bottom:14px;"><img src="images/University-of-Queensland-UQ-logo%20(1).png" alt="The University of Queensland" style="max-height:44px;max-width:180px;filter:none;opacity:1;" onerror="this.onerror=null;this.src='https://static.uq.net.au/v11/logos/corporate/uq-logo--reversed.svg'"></div>
         <div class="partner-name">UQ Cyber Research Centre</div>
         <div class="partner-desc">School of Electrical Engineering and Computer Science, The University of Queensland, Brisbane. A leading centre for cybersecurity research and education in the Asia-Pacific region.</div>
+      </div>
+      <div class="partner lead">
+        <div class="partner-role">Research Showcase</div>
+        <div class="partner-name">AEA Ignite</div>
+        <div class="partner-desc">Australia's Economic Accelerator. Supports our research on the Authentication and Provenance of Manipulated Media (APMM), demonstrated during the workshop.</div>
       </div>
       <div class="partner">
         <div class="partner-role">Keynote Institution</div>
@@ -562,7 +572,7 @@
     </div>
     <div class="footer-bottom">
       <p class="footer-ack">UQ acknowledges the Traditional Owners and their custodianship of the lands on which UQ is situated.</p>
-      <div class="footer-legal">&copy; The University of Queensland &middot; ABN 63 942 912 684<br>Next Generation Forensic Readiness Workshop</div>
+      <div class="footer-legal">&copy; The University of Queensland &middot; ABN 63 942 912 684<br>Next Generation Forensic Readiness Workshop &middot; 18 November 2026<br>AEA Ignite APMM Showcase</div>
     </div>
   </div>
 </footer>

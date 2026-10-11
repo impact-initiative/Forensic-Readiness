@@ -101,9 +101,11 @@
      .speaker-talk { font-size: 12px; color: var(--mid); font-style: italic; line-height: 1.5; }
      .speaker-link { font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--purple); text-decoration: none; }
      .speaker-link:hover { text-decoration: underline; }
+      .speaker-demo-note { font-size: 11px; color: var(--purple); line-height: 1.5; margin-top: 6px; }
+      .programme-note { font-size: 13.5px; color: var(--mid); line-height: 1.7; margin-top: 24px; }
 
-     /* Abstract trigger and modal, ready for when talk abstracts arrive */
-     .talk-trigger { display: inline-block; margin-left: 10px; font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--purple); text-decoration: none; }
+     /* Abstract trigger and modal */
+     .talk-trigger { display: inline-block; margin: 10px 0 0; font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--purple); text-decoration: none; }
      .talk-trigger:hover { text-decoration: underline; }
      .talk-modal { position: fixed; inset: 0; z-index: 200; display: none; align-items: center; justify-content: center; padding: 24px; background: rgba(22,8,41,0.55); }
      .talk-modal:target { display: flex; }
@@ -268,15 +270,16 @@
 <div class="workshop-title">Forensics Challenges for Law Enforcement</div>
 <div class="tags"><span class="tag">Forenoon</span><span class="tag">Keynotes</span><span class="tag">Student Demos</span></div>
 <p class="workshop-body">Investigators now handle evidence that is volatile, spread across cloud services and endpoints, frequently encrypted, and increasingly fabricated. This track examines live response and endpoint visibility at scale, acquisition of evidence from devices and social platforms, authentication of images, audio, and video presented as evidence, and the standards that keep digital findings admissible.</p>
-<p class="workshop-people"><strong>Keynotes:</strong> Mike Cohen, Prof. Parag Rughani<br/><strong>Demos:</strong> Jack, Noah, Minkyung, Aditya, Anurag</p>
+<p class="workshop-people"><strong>Keynotes:</strong> Mike Cohen, Prof. Parag Rughani, Prof. Rajat Subhra Chakraborty<br/><strong>Demos:</strong> Jack, Noah, Minkyung, Aditya, Anurag</p>
 </div>
 <div class="workshop">
 <div class="workshop-num">Track 2 of 2</div>
 <div class="workshop-title">Forensics to Build Cyber Resilience for Health Care</div>
 <div class="tags"><span class="tag">Afternoon</span><span class="tag">Keynotes</span><span class="tag">Student Demos</span></div>
 <p class="workshop-body">Hospitals and health providers run on connected clinical systems, medical devices, and shared patient records, and an incident in any of them is a patient safety issue as much as a data breach. This track treats forensic readiness as a resilience capability: evidence preservation designed into clinical environments, investigation that does not interrupt care, and the integrity of medical data and imaging.</p>
-<p class="workshop-people"><strong>Keynotes:</strong> Prof. Rajat Subhra Chakraborty, Matt Walker<br/><strong>Demos:</strong> Gagandeep, Harshith, Samudi, Gaurav</p>
+<p class="workshop-people"><strong>Keynotes:</strong> Matt Walker<br/><strong>Demos:</strong> Gagandeep, Harshith, Samudi, Gaurav</p>
 </div>
+<p class="programme-note"><strong>Additional keynote:</strong> Surya Nepal (CSIRO) will speak during the workshop on 18 November. The track and time will be confirmed in the final programme.</p>
 </div>
 </div>
 </section>
@@ -326,9 +329,18 @@
 </div>
 <div class="speaker-card confirmed">
 <img alt="Professor Rajat Subhra Chakraborty" class="speaker-photo" src="https://impact-initiative.github.io/Forensic-Readiness/images/RajatSubh.jpg"/>
-<div class="speaker-role">Keynote · Afternoon</div>
+<div class="speaker-role">Keynote · Forenoon</div>
 <div class="speaker-name">Prof. Rajat Subhra Chakraborty</div>
 <div class="speaker-title">Indian Institute of Technology Kharagpur, India</div>
+<div class="speaker-talk">See it to Sieve It: Visual Techniques in Malware Binary and Network Traffic Detection and Classification</div>
+<p class="speaker-demo-note">Includes a live online demo by Anurag</p>
+<a class="talk-trigger" href="#abstract-rajat">Read abstract ↗</a>
+</div>
+<div class="speaker-card confirmed">
+<img alt="Surya Nepal" class="speaker-photo" src="images/Surya.jpg"/>
+<div class="speaker-role">Keynote · 18 November (session TBC)</div>
+<div class="speaker-name">Surya Nepal</div>
+<div class="speaker-title">CSIRO</div>
 <div class="speaker-talk">Talk title to be announced</div>
 </div>
 <div class="speaker-card confirmed">
@@ -342,7 +354,17 @@
 
 </div>
 </div>
-<!-- Abstract modals. Add one block per speaker as abstracts arrive, then uncomment the matching Abstract link.
+<div class="talk-modal" id="abstract-rajat">
+<div class="talk-modal-box">
+<a href="#speakers" class="talk-modal-close" aria-label="Close Rajat Chakraborty talk abstract">×</a>
+<div class="talk-modal-role">Keynote · Forenoon</div>
+<div class="talk-modal-name">Prof. Rajat Subhra Chakraborty · Indian Institute of Technology Kharagpur</div>
+<h3 class="talk-modal-title">See it to Sieve It: Visual Techniques in Malware Binary and Network Traffic Detection and Classification</h3>
+<p class="talk-modal-body">Classification of malware binaries and network traffic are being performed increasingly by advanced machine learning techniques. However, the wide variety of malware and encrypted network traffic have proven challenging to these techniques. In this talk, I will share some of my research group's recent work on applying visual techniques for these tasks. For malware binaries, the repeated usage patterns of particular instructions create distinctive visual patterns. Similarly, the temporal arrival patterns of different classes of network traffic, when plotted, create graphs with distinctive visual features. These visual cues make it possible for a well-trained machine learning classifier to detect and classify malware binary or network traffic with high accuracy.</p>
+<p class="talk-modal-body" style="margin-top:14px;">The talk will be accompanied by a live online demo by a graduate student researcher (Anurag).</p>
+</div>
+</div>
+<!-- Future abstracts can be added using the same modal pattern.
    <div class="talk-modal" id="abstract-mike">
      <div class="talk-modal-box">
        <a href="#speakers" class="talk-modal-close" aria-label="Close">×</a>
@@ -360,7 +382,7 @@
 <div class="inner">
 <p class="section-label">Programme</p>
 <h2 class="section-title">Workshop Agenda</h2>
-<p class="section-lead">Wednesday, 18 November 2026 · 50-C207, Hawken Engineering Building, The University of Queensland · 9:00 AM AEST onwards · Timings are provisional and will be finalised closer to the date.</p>
+<p class="section-lead">Wednesday, 18 November 2026 · 50-C207, Hawken Engineering Building, The University of Queensland · 9:00 AM AEST onwards · Timings are provisional. The forenoon programme is being revised to accommodate Prof. Rajat Subhra Chakraborty; Surya Nepal’s keynote session is also being finalised.</p>
 <div class="agenda-wrap">
 <table class="agenda">
 <thead><tr><th>AEST / Brisbane</th><th>Session</th></tr></thead>
@@ -370,15 +392,17 @@
 <tr><td class="time">9:15 AM – 9:55 AM</td><td class="session">Keynote: Mike Cohen<span class="sub">Rapid7</span></td></tr>
 <tr><td class="time">10:00 AM – 10:40 AM</td><td class="session">Keynote: Prof. Parag Rughani<span class="sub">National Forensic Sciences University, India</span></td></tr>
 <tr><td class="time">10:40 AM – 11:00 AM</td><td>Morning Tea</td></tr>
-<tr><td class="time">11:00 AM – 12:15 PM</td><td class="session">Student Project Demonstrations<span class="sub">Jack, Noah, Minkyung, Aditya, Anurag</span></td></tr>
+<tr><td class="time">Forenoon · Time TBC</td><td class="session">Keynote: Prof. Rajat Subhra Chakraborty<span class="sub">See it to Sieve It: Visual Techniques in Malware Binary and Network Traffic Detection and Classification · Live online demo by Anurag</span></td></tr>
+<tr><td class="time">Timing under revision</td><td class="session">Student Project Demonstrations<span class="sub">Jack, Noah, Minkyung, Aditya, Anurag · Forenoon run order to be updated</span></td></tr>
 <tr><td class="time">12:15 PM – 1:15 PM</td><td>Lunch</td></tr>
 <tr class="track-row"><td colspan="2">Track 2 · Forensics to Build Cyber Resilience for Health Care</td></tr>
-<tr><td class="time">1:15 PM – 1:55 PM</td><td class="session">Keynote: Prof. Rajat Subhra Chakraborty<span class="sub">IIT Kharagpur, India</span></td></tr>
+<tr><td class="time">1:15 PM – 1:55 PM</td><td class="session">Track 2 session to be confirmed<span class="sub">Programme being revised following the keynote schedule change</span></td></tr>
 <tr><td class="time">2:00 PM – 2:40 PM</td><td class="session">Keynote: Matt Walker<span class="sub">CyberAgile</span></td></tr>
 <tr><td class="time">2:45 PM – 3:25 PM</td><td class="session">Track Discussion and Q&amp;A<span class="sub">Provisional programme slot</span></td></tr>
 <tr><td class="time">3:25 PM – 3:40 PM</td><td>Afternoon Tea</td></tr>
 <tr><td class="time">3:40 PM – 4:40 PM</td><td class="session">Student Project Demonstrations<span class="sub">Gagandeep, Harshith, Samudi, Gaurav</span></td></tr>
 <tr><td class="time">4:40 PM – 5:00 PM</td><td class="session">Synthesis and Closing</td></tr>
+<tr><td class="time">18 November · Time TBC</td><td class="session">Additional Keynote: Surya Nepal<span class="sub">CSIRO · Session time and talk title to be announced</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -503,6 +527,11 @@
 <div class="partner-role">Keynote Institution</div>
 <div class="partner-name">IIT Kharagpur</div>
 <div class="partner-desc">India. Keynote: Prof. Rajat Subhra Chakraborty</div>
+</div>
+<div class="partner">
+<div class="partner-role">Keynote Institution</div>
+<div class="partner-name">CSIRO</div>
+<div class="partner-desc">Keynote: Surya Nepal</div>
 </div>
 <div class="partner">
 <div class="partner-role">Keynote Institution</div>
